@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Rental Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Bike Rental Service</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rent">Rent a Bike</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="info-section">
+        <div class="container">
+            <h2>About Our Service</h2>
+            <p>We offer high-quality bikes for rent, suitable for city commuting, mountain biking, or casual rides. Rent your bike today and explore the city in style!</p>
+        </div>
+    </section>
+
+    <section id="rent" class="info-section">
+        <div class="container">
+            <h2>Rent a Bike</h2>
+            <form id="rental-form">
+                <label for="bike-type">Choose Bike Type:</label>
+                <select id="bike-type" name="bike-type">
+                    <option value="mountain">Mountain Bike</option>
+                    <option value="road">Road Bike</option>
+                    <option value="city">City Bike</option>
+                </select>
+
+                <label for="rental-duration">Rental Duration (in hours):</label>
+                <input type="number" id="rental-duration" name="rental-duration" min="1" required>
+
+                <button type="submit">Rent Now</button>
+            </form>
+            <p id="rental-price">Price: $<span id="price">10</span> per hour</p>
+        </div>
+    </section>
+
+    <section id="contact" class="info-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email us at: <a href="mailto:support@bikerentals.com">support@bikerentals.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bike Rental Service. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
